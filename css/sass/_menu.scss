@@ -9,48 +9,90 @@ header {
   border-bottom: 1px solid $black-light;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.menu{
+.menu {
   list-style: none;
   display: flex;
 
-  li{
+  li {
     margin-left: 24px;
   }
 
-  @include responsive(s){
+  @include responsive(s) {
     display: none;
   }
 }
 
-.logo{
+.logo {
   max-width: 64px;
   min-width: 48px;
   padding: 10px;
 }
 
-.cta-desktop, .search{
+.cta-desktop,
+.search {
   display: block;
 
-  @include responsive(s){
+  @include responsive(s) {
     display: none;
   }
 }
 
-.cta-mobile{
+.cta-mobile {
   display: none;
 
-  @include responsive(s){
+  @include responsive(s) {
     display: block;
   }
 }
 
-.bx{
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  background-color: $black-normal;
+
+  transition: .7s ease;
+
+  display: none;
+
+  @include responsive(s) {
+    display: block;
+  }
+  
+  li {
+    border-bottom: 1px solid $black-light;
+
+    .link-menu-mobile {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 24px 16px 24px 16px;
+
+      &:hover {
+        background-color: $black-light;
+        padding: 24px 16px 24px 24px;
+      }
+    }
+  }
+}
+
+.menu-mobile.showmenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bx {
   width: 40px;
   height: 40px;
 
@@ -60,13 +102,12 @@ nav{
 
   display: none;
 
-  @include responsive(s){
+  @include responsive(s) {
     display: block;
   }
 
-
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     width: 70%;
     height: 2px;
     display: block;
@@ -78,14 +119,13 @@ nav{
     transform: translate(-50%, -50%);
 
     border-radius: 2px;
+    transition: .6s ease;
 
     background-color: $white-light;
-
-    
   }
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     width: 70%;
     height: 2px;
     display: block;
@@ -97,9 +137,59 @@ nav{
     transform: translate(-50%, -50%);
 
     border-radius: 2px;
+    transition: .6s ease;
 
     background-color: $white-light;
-
-    
   }
 }
+
+
+.bx.active {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  position: relative;
+
+  display: none;
+
+  @include responsive(s) {
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(135deg);
+
+    border-radius: 2px;
+
+    background-color: $white-light;
+  }
+
+  &::before {
+    content: "";
+    width: 70%;
+    height: 2px;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-135deg);
+
+    border-radius: 2px;
+
+    background-color: $white-light;
+  }
+}
+
