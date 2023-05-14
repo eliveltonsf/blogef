@@ -1832,6 +1832,14 @@ input, select, option, textarea {
   font-weight: 200;
 }
 
+select, option {
+  height: 42px;
+}
+
+textarea {
+  height: auto;
+}
+
 .btn-search {
   cursor: pointer;
   height: 42px;
