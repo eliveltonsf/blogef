@@ -248,7 +248,7 @@
     <!--SECTION RECENT POST  -->
     <section class="container">
       <h3>Posts recentes</h3>
-      <div class="row ">
+      <div class="row">
         <div class="grid-4 card">
           <div class="row">
             <div class="grid-nobreak-3">
@@ -258,12 +258,14 @@
               </h6>
             </div>
             <div class="grid-nobreak-9">
-              <div class="row">                
-                <h6 class="uppercase color-primary text-center text-left py-1">CINEMA</h6>
+              <div class="row">
+                <h6 class="uppercase color-primary text-center text-left py-1">
+                  CINEMA
+                </h6>
                 <h5 class="text-center text-left">Top 10 Filmes de 2021</h5>
                 <p class="text-center text-left">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
-                  pharetra ut ac, pellentesque.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ornare urna pharetra ut ac, pellentesque.
                 </p>
                 <div class="flex-start-row mt-2">
                   <div class="profile">
@@ -288,12 +290,16 @@
               </h6>
             </div>
             <div class="grid-nobreak-9">
-              <div class="row">                
-                <h6 class="uppercase color-primary text-center text-left py-1">FOTOGRAFIA</h6>
-                <h5 class="text-center text-left">A melhor câmera CxB em 2021</h5>
+              <div class="row">
+                <h6 class="uppercase color-primary text-center text-left py-1">
+                  FOTOGRAFIA
+                </h6>
+                <h5 class="text-center text-left">
+                  A melhor câmera CxB em 2021
+                </h5>
                 <p class="text-center text-left">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
-                  pharetra ut ac, pellentesque.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ornare urna pharetra ut ac, pellentesque.
                 </p>
                 <div class="flex-start-row mt-2">
                   <div class="profile">
@@ -318,12 +324,16 @@
               </h6>
             </div>
             <div class="grid-nobreak-9">
-              <div class="row">                
-                <h6 class="uppercase color-primary text-center text-left py-1">tecnologia</h6>
-                <h5 class="text-center text-left">PC Gamer muito caro, o que fazer?</h5>
+              <div class="row">
+                <h6 class="uppercase color-primary text-center text-left py-1">
+                  tecnologia
+                </h6>
+                <h5 class="text-center text-left">
+                  PC Gamer muito caro, o que fazer?
+                </h5>
                 <p class="text-center text-left">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
-                  pharetra ut ac, pellentesque.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ornare urna pharetra ut ac, pellentesque.
                 </p>
                 <div class="flex-start-row mt-2">
                   <div class="profile">
@@ -347,13 +357,25 @@
         <div class="grid-4 disappear"></div>
         <div class="grid-4">
           <div class="flex-center">
-            <img src="svg/blog-logo2.svg" class="icon-l" alt=""/>
+            <img src="svg/blog-logo2.svg" class="icon-l" alt="" />
           </div>
           <h5 class="text-center">Olá, faça o login para continuar.</h5>
 
           <form>
-            <input type="text" name="user" class="mt-3" placeholder="Digite seu usuário" id="">
-            <input type="password" name="password" class="mt-2" placeholder="Digite sua senha" id="">
+            <input
+              type="text"
+              name="user"
+              class="mt-3"
+              placeholder="Digite seu usuário"
+              id=""
+            />
+            <input
+              type="password"
+              name="password"
+              class="mt-2"
+              placeholder="Digite sua senha"
+              id=""
+            />
             <button class="btn w-100 mt-3">Entrar</button>
           </form>
         </div>
@@ -367,15 +389,16 @@
         <div class="grid-6">
           <div class="flex-start-row">
             <div class="profile-big">
-              <img src="profile/eli.png" class="profile-img" alt="">
+              <img src="profile/eli.png" class="profile-img" alt="" />
             </div>
             <div class="ml-3">
               <h3>Eli Ferreira</h3>
               <h6 class="color-gray">@elifer</h6>
-            </div>         
+            </div>
           </div>
           <p class="mt-3">
-            Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consecteturs
+            Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet
+            consecteturs
           </p>
         </div>
         <div class="grid-6 flex-center">
@@ -383,6 +406,63 @@
           <a href="#" class="btn ml-3">Adicionar post</a>
         </div>
       </div>
+    </section>
+
+    <!-- ADD POST  -->
+    <section class="container">
+      <h3>Adicionar um novo post</h3>
+      <p class="mt-1">
+        Preencha os campos abaixo para adicionar um novo post ao blog.
+      </p>
+
+      <form>
+        <div class="row">
+          <div class="grid-3 p-0">
+            <label for="date"><h6>Data</h6></label>
+            <input type="date" id="date" name="date" class="mt-1">
+          </div>
+          <div class="grid-3 p-0">
+            <label for="category"><h6>Categoria</h6></label>
+            <select id="category" name="category" class="mt-1">
+              <option value="tecnologia">Tecnologia</option>
+              <option value="games">Games</option>
+              <option value="cinema">Cinema</option>
+              <option value="fotografia">Fotografia</option>
+            </select>
+          </div>
+          <div class="grid-6 p-0">
+            <label for="title"><h6>Titulo</h6></label>
+            <input type="text" id="title" name="title" class="mt-1">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="grid-9 p-0">
+            <label for="resume"><h6>Resumo do post</h6></label>
+            <input type="text" id="resume" name="resume" class="mt-1">
+          </div>
+          <div class="grid-3 p-0">
+            <label for="duration"><h6>Duração</h6></label>
+            <select id="duration" name="duration" class="mt-1">
+              <option value="5">5min.</option>
+              <option value="7">7min.</option>
+              <option value="10">10.min</option>
+              <option value="15">15min.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="grid-12">
+            <label for="description"><h6>Descrição</h6></label>
+            <textarea name="description" id="description" class="w-100 mt-1" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div class="row flex-end-row">
+          <button class="btn mr-2">Adicionar</button>
+        </div>
+      </form>
     </section>
 
     <!-- JS -->
