@@ -1822,7 +1822,7 @@ input, select, option, textarea {
   cursor: pointer;
   height: 42px;
   width: 56px;
-  background-image: url(../../svg/icon-search.svg);
+  background-image: url(../svg/icon-search.svg);
   background-repeat: no-repeat;
   background-position: center;
   transform: translate3d(-6px, 0, 0);
