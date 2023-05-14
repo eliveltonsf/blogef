@@ -1,200 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogef.</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="svg/favicon.ico">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="svg/favicon.ico" />
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="px-2 py-1">
-        <nav>
-            <div class="logo">
-                <a href="">
-                    <img src="./svg/blog-logo.svg" alt="Logo" />
-                </a>
-            </div>
-            <ul class="menu">
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </nav>
-
-        <div class="bx"></div>
-
-        <div class="flex-start-row mr-3">
-            <div class="search">
-                <form class="flex" action="">
-                    <input type="text" name="search" placeholder="Buscar..." />
-                    <button class="btn-search"></button>
-                </form>
-            </div>
-
-            <div class="cta-desktop">
-                <a href="" class="btn ml-2">Login</a>
-            </div>
-
-            <div class="cta-mobile">
-                <a href="" class="link color-primary">Login</a>
-            </div>
+      <nav>
+        <div class="logo">
+          <a href="">
+            <img src="./svg/blog-logo.svg" alt="Logo" />
+          </a>
         </div>
+        <ul class="menu">
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="bx"></div>
+
+      <div class="flex-start-row mr-3">
+        <div class="search">
+          <form class="flex" action="">
+            <input type="text" name="search" placeholder="Buscar..." />
+            <button class="btn-search"></button>
+          </form>
+        </div>
+
+        <div class="cta-desktop">
+          <a href="" class="btn ml-2">Login</a>
+        </div>
+
+        <div class="cta-mobile">
+          <a href="" class="link color-primary">Login</a>
+        </div>
+      </div>
     </header>
 
     <!-- MENU MOBILE -->
     <div class="relative">
-        <div class="menu-mobile">
-            <ul class="nav-mobile">
-                <li><a href="#" class="link-menu-mobile">Sobre</a></li>
-                <li><a href="#" class="link-menu-mobile">Contato</a></li>
-                <li class="py-2 px-2">
-                    <form class="flex">
-                        <input type="text" name="search" placeholder="Buscar..." />
-                        <button class="btn-search"></button>
-                    </form>
-                </li>
-            </ul>
-        </div>
+      <div class="menu-mobile">
+        <ul class="nav-mobile">
+          <li><a href="#" class="link-menu-mobile">Sobre</a></li>
+          <li><a href="#" class="link-menu-mobile">Contato</a></li>
+          <li class="py-2 px-2">
+            <form class="flex">
+              <input type="text" name="search" placeholder="Buscar..." />
+              <button class="btn-search"></button>
+            </form>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- SECTION HERO -->
     <section class="container">
-        <div class="row">
-            <div class="grid-6">
-                <h1 class="h0">blogef<span>.</span></h1>
-                <p class="mt-1">
-                    Um blog para todos. Escrever. Ler.
-                     Comentar. Contribuir. Aprender. Conectar.
-                </p>
-                <a class="btn mt-4" href="">Começar a escrever</a>
-            </div>
-            <div class="grid-6">
-                <img class="blog-logo" src="svg/blog-logo.svg" alt="">
-            </div>
+      <div class="row">
+        <div class="grid-6">
+          <h1 class="h0">blogef<span>.</span></h1>
+          <p class="mt-1">
+            Um blog para todos. Escrever. Ler. Comentar. Contribuir. Aprender.
+            Conectar.
+          </p>
+          <a class="btn mt-4" href="">Começar a escrever</a>
         </div>
+        <div class="grid-6">
+          <img class="blog-logo" src="svg/blog-logo.svg" alt="" />
+        </div>
+      </div>
     </section>
 
-     <!-- SECTION MAIN POST -->
-     <section class="container">
-        <div class="row">
-            <div class="grid-6">
-               <img src="svg/icon-star.svg" class="icon-l" alt="">
+    <!-- SECTION MAIN POST -->
+    <section class="container">
+      <div class="row">
+        <div class="grid-6">
+          <img src="svg/icon-star.svg" class="icon-l" alt="" />
 
-                <h3 class="mt-2">Os Melhores e mais bem votados posts do mês.</h3>
-                <p class="mt-2">
-                    Lorem ipsum dolor sit amet,
-                     consectetur adipiscing elit.
-                     Ornare urna pharetra ut ac, pellentesque. 
-                </p>
-            </div>
-            <div class="grid-6">
-                <div class="py-3 bb-black">
-                    <h6 class="color-gray">13 MAI 2023</h6>
-                    <h6 class="uppercase color-primary">CINEMA</h6>
-
-                    <h4>Top 10 Filmes de 2021</h4>
-                    <p class="mt-1">
-                        Lorem ipsum dolor sit amet,
-                         consectetur adipiscing elit.
-                         Ornare urna pharetra ut ac, pellentesque. 
-                    </p>
-                    <div class="flex-start-row mt-3">
-                        <div class="profile">
-                            <img src="profile/eli.png" class="profile-img" alt="">
-                        </div>
-                        <div class="ml-1">
-                            <h6 class="color-primary">Eli Ferreira</h6>
-                            <h6 class="color-gray">@eliferreira</h6>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="py-3 bb-black">
-                    <h6 class="color-gray">13 MAI 2023</h6>
-                    <h6 class="uppercase color-primary">FOTOGRAFIA</h6>
-
-                    <h4>A melhor câmera CxB em 2021</h4>
-                    <p class="mt-1">
-                        Lorem ipsum dolor sit amet,
-                         consectetur adipiscing elit.
-                         Ornare urna pharetra ut ac, pellentesque. 
-                    </p>
-                    <div class="flex-start-row mt-3">
-                        <div class="profile">
-                            <img src="profile/juliana.png" class="profile-img" alt="">
-                        </div>
-                        <div class="ml-1">
-                            <h6 class="color-primary">Juliana Moura</h6>
-                            <h6 class="color-gray">@julianaMoura</h6>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="py-3 bb-black">
-                    <h6 class="color-gray">13 MAI 2023</h6>
-                    <h6 class="uppercase color-primary">Gamer</h6>
-
-                    <h4>PC Gamer muito caro, o que fazer?</h4>
-                    <p class="mt-1">
-                        Lorem ipsum dolor sit amet,
-                         consectetur adipiscing elit.
-                         Ornare urna pharetra ut ac, pellentesque. 
-                    </p>
-                    <div class="flex-start-row mt-3">
-                        <div class="profile">
-                            <img src="profile/alex.png" class="profile-img" alt="">
-                        </div>
-                        <div class="ml-1">
-                            <h6 class="color-primary">Alex Fushi</h6>
-                            <h6 class="color-gray">@Alexfushi</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h3 class="mt-2">Os Melhores e mais bem votados posts do mês.</h3>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
+            pharetra ut ac, pellentesque.
+          </p>
         </div>
-     </section>
+        <div class="grid-6">
+          <div class="py-3 bb-black">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">CINEMA</h6>
 
-     <!-- SECTION MORE VIEWWS -->
-     <section class="container">
-        <h3>Post com mais visitas</h3>
-        <p class="mt-1">
-            Lorem ipsum dolor sit amet,
-             consectetur adipiscing elit.
-             Ornare urna pharetra ut ac, pellentesque. 
+            <h4>Top 10 Filmes de 2021</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="flex-start-row mt-3">
+              <div class="profile">
+                <img src="profile/eli.png" class="profile-img" alt="" />
+              </div>
+              <div class="ml-1">
+                <h6 class="color-primary">Eli Ferreira</h6>
+                <h6 class="color-gray">@eliferreira</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 bb-black">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">FOTOGRAFIA</h6>
+
+            <h4>A melhor câmera CxB em 2021</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="flex-start-row mt-3">
+              <div class="profile">
+                <img src="profile/juliana.png" class="profile-img" alt="" />
+              </div>
+              <div class="ml-1">
+                <h6 class="color-primary">Juliana Moura</h6>
+                <h6 class="color-gray">@julianaMoura</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-3 bb-black">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">Gamer</h6>
+
+            <h4>PC Gamer muito caro, o que fazer?</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="flex-start-row mt-3">
+              <div class="profile">
+                <img src="profile/alex.png" class="profile-img" alt="" />
+              </div>
+              <div class="ml-1">
+                <h6 class="color-primary">Alex Fushi</h6>
+                <h6 class="color-gray">@Alexfushi</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION MORE VIEWWS -->
+    <section class="container">
+      <h3>Post com mais visitas</h3>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
+        pharetra ut ac, pellentesque.
+      </p>
+
+      <div class="row">
+        <div class="grid-4 card p-0">
+          <div class="thumb hidden">
+            <a href="">
+              <img src="img/01.png" alt="" />
+            </a>
+          </div>
+          <div class="mt-2 px-2">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">tecnologia</h6>
+
+            <h4>PC Gamer muito caro, o que fazer?</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="my-3">
+              <a href="" class="link color-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-4 card p-0">
+          <div class="thumb hidden">
+            <a href="">
+              <img src="img/01.png" alt="" />
+            </a>
+          </div>
+          <div class="mt-2 px-2">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">tecnologia</h6>
+
+            <h4>PC Gamer muito caro, o que fazer?</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="my-3">
+              <a href="" class="link color-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-4 card p-0">
+          <div class="thumb hidden">
+            <a href="">
+              <img src="img/01.png" alt="" />
+            </a>
+          </div>
+          <div class="mt-2 px-2">
+            <h6 class="color-gray">13 MAI 2023</h6>
+            <h6 class="uppercase color-primary">tecnologia</h6>
+
+            <h4>PC Gamer muito caro, o que fazer?</h4>
+            <p class="mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+              urna pharetra ut ac, pellentesque.
+            </p>
+            <div class="my-3">
+              <a href="" class="link color-primary">Ler mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="container">
+      <div class="img-banner flex-center hidden">
+        <img src="img/02.png" alt="" />
+      </div>
+      <div class="row mt-3">
+        <h6 class="color-gray mt-3 text-center">13 MAI 2023</h6>
+        <h6 class="uppercase color-primary text-center">tecnologia</h6>
+        <h2 class="text-center">PC Gamer muito caro, o que fazer?</h2>
+        <p class="mt-1 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna
+          pharetra ut ac, pellentesque.
         </p>
-
-        <div class="row">
-            <div class="grid-4 card p-0">
-                <div class="thumb hidden">
-                    <a href="">
-                        <img src="img/01.png" alt="">
-                    </a>
-                </div>
-                <div class="mt-2 px-2">
-                    <h6 class="color-gray">13 MAI 2023</h6>
-                    <h6 class="uppercase color-primary">tecnologia</h6>
-
-                    <h4>PC Gamer muito caro, o que fazer?</h4>
-                    <p class="mt-1">
-                        Lorem ipsum dolor sit amet,
-                         consectetur adipiscing elit.
-                         Ornare urna pharetra ut ac, pellentesque. 
-                    </p>
-                    <div class="my-3">
-                        <a href="" class="link color-primary">Ler mais</a>
-                    </div>
-                </div>
-            </div>
+        <div class="my-3 flex-center">
+          <a href="" class="link color-primary">Ler mais</a>
         </div>
-     </section>
+      </div>
+    </section>
 
     <!-- JS -->
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
